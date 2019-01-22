@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "242501745710",
+    "firebase_url": "https://collegemanagement-ce96f.firebaseio.com",
+    "project_id": "collegemanagement-ce96f",
+    "storage_bucket": "collegemanagement-ce96f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242501745710:android:46c156b57450df3e",
+        "android_client_info": {
+          "package_name": "com.example.nagendra.collegemanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242501745710-scc6hh5uilduhdh994tfdvs0e0c1cq3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nagendra.collegemanagement",
+            "certificate_hash": "b9f8d61a178c2874879aced7b890e6004163c61f"
+          }
+        },
+        {
+          "client_id": "242501745710-l58n7pr1i88lp6srfvtcrvqqqki44ehs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCna7ML1qG3S2JXaZv0nWu0ojvNB7DC65E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242501745710-l58n7pr1i88lp6srfvtcrvqqqki44ehs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

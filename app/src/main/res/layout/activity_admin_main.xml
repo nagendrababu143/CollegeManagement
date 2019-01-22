@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMainActivity">
+
+    <include android:id="@+id/admin_main_act"
+        layout="@layout/bar"/>
+
+    <LinearLayout
+        android:id="@+id/assign_lecture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/admin_main_act"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assign Lecture"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject_name"
+            app:met_floatingLabel="normal"
+            android:hint="Subject Name"
+            android:layout_marginTop="10dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chapters"
+            app:met_floatingLabel="normal"
+            android:hint="Chapters"
+            android:inputType="text"
+            android:layout_marginTop="10dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nooftests"
+            app:met_floatingLabel="normal"
+            android:hint="No of Tests"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noofperiods"
+            app:met_floatingLabel="normal"
+            android:hint="No of Periods"
+            android:layout_marginTop="10dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            app:met_floatingLabel="normal"
+            android:hint="Date"
+            android:layout_marginTop="10dp"
+            android:inputType="date"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updatelecturedetails"
+            android:background="@color/colorPrimaryDark"
+            android:text="Update"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

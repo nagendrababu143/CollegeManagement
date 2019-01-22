@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminRegisterActivity">
+
+    <include android:id="@+id/bar_adminregister"
+        layout="@layout/bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/bar_adminregister">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a New Account"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminusername_register"
+            app:met_floatingLabel="normal"
+            android:hint="Username"
+            android:layout_marginTop="10dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminemailid_register"
+            app:met_floatingLabel="normal"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminpassword_register"
+            app:met_floatingLabel="normal"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adminphonenumber_register"
+            app:met_floatingLabel="normal"
+            android:hint="Phone number"
+            android:layout_marginTop="10dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admincollegeid_register"
+            app:met_floatingLabel="normal"
+            android:hint="College ID"
+            android:layout_marginTop="10dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admindepartment_register"
+            app:met_floatingLabel="normal"
+            android:hint="Department"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_register_admin"
+            android:background="@color/colorPrimaryDark"
+            android:text="Register"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

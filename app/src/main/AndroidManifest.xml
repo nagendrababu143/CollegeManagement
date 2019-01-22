@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nagendra.collegemanagement">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cmslogo"
+        android:label="CMS"
+        android:roundIcon="@drawable/cmslogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".AdminActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TeacherActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".StudentActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminRegisterActivity"
+            android:parentActivityName=".AdminActivity" />
+        <activity android:name=".AdminMainActivity"></activity>
+    </application>
+
+</manifest>

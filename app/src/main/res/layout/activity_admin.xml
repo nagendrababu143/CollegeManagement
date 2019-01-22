@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <include android:id="@+id/bar_admin_login"
+        layout="@layout/bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/bar_admin_login">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginemail_admin"
+            app:met_floatingLabel="normal"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginpassword_admin"
+            app:met_floatingLabel="normal"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verify_admin_code"
+            app:met_floatingLabel="normal"
+            android:hint="Admin Code"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login_admin"
+            android:background="@color/colorPrimaryDark"
+            android:text="Login"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/forgotpassword_admin"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password? Click here..!"/>
+        <TextView
+            android:id="@+id/register_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Account Register here..!"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
