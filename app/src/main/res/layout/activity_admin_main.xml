@@ -59,14 +59,32 @@
             app:met_floatingLabel="normal"
             android:hint="No of Periods"
             android:layout_marginTop="10dp"/>
-        <com.rengwuxian.materialedittext.MaterialEditText
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/date"-->
+            <!--android:hint="Date"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:inputType="date"-->
+            <!--android:cursorVisible="false"-->
+            <!--android:focusable="false"-->
+            <!--android:focusableInTouchMode="false"-->
+            <!--android:inputType="none"-->
+            <!--android:drawableRight="@drawable/calender"/>-->
+
+        <EditText
+            android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/date"
-            app:met_floatingLabel="normal"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:drawableRight="@drawable/calender"
+            android:gravity="center"
             android:hint="Date"
-            android:layout_marginTop="10dp"
-            android:inputType="date"/>
+            android:textAlignment="textStart"
+            tools:ignore="RtlCompat" />
 
 
         <Button
